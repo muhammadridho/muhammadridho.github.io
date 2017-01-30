@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simple Quiz</title>
+        
+        <!-- Meta Information -->
+        <meta charset="utf-8">
+        <meta name="application-name" content="Simple Quiz Application">
+        <meta name="author" content="Muhammad ridho">
+        <meta name="keywords" content="Javascript,HTML,CSS">
+        
+        <!-- Link with Another File -->
+        <link rel="stylesheet" href="../css/quiz-style.css">
+        <link rel="icon" href="../asset/Project/Questions.png">
+       
+    </head>
+    <body>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="../javascript/quiz.js"></script>
+      <!-- Content -->
+        <header>
+           <h2>SIMPLE<span id="app"> QUIZ App</span></h2>
+       </header>
+       <section>
+           <!-- Status Quiz : number Quiz-->
+            <div class="quiz status">
+                <ul id="nomor">
+                   
+                </ul>
+            </div>
+            
+            <!-- Form Content : Judul Quiz -->
+            <div class="quiz form">
+                <h1>Soal <span id="nomorSoal" class=".bounceIn">1</span></h1>
+                <p id="soal">Nama Bapak Proklamator Republik Indonesia ?</p>
+                <div class="option">
+                    <ul>
+                        <li>
+                            <input id="a" type="radio" value="a" name="option"></input><label for="a" id="opsiA">Pilihan A</label>
+                        </li>
+                        <li>
+                            <input id="b" type="radio" value="b" name="option"></input><label for="b" id="opsiB">Pilihan B</label>
+
+                        </li>
+                    </ul>
+                         
+                </div>
+            </div>
+            <div class="letakTombol">
+                <input id="pilih" type="button" value="LANJUT"/>
+            </div>
+            <!-- Footer Content : Type Quiz -->
+            <div class="quiz footer">
+              <!-- Jenis Pelajaran -->
+               <ul id="jenis">
+                 <!-- Automatis membuat saat Transisi soal -->
+               </ul>
+          
+            </div>
+    <!-- Pesan Hasil score -->
+      <div class="latar">  
+            <div class="pesan">
+                  <h1>Terima kasih</h1>
+                  <h2>Atas partisipasi anda dalam memainkan game sederhana saya</h2>
+                  <h4>score</h4>
+              <h3 id="score">60</h3>
+            </div>
+      </div>
+       </section>
+       <!-- Footer : Author , View me-->
+    <footer>
+        <p>Made by</p>
+        <a href="https://github.com/muhammadridho" target="_blank" id="idsaga"></a>
+        <p>{ Imagine Teenagers ; }</p>
+    </footer>
+    </body>
+</html>

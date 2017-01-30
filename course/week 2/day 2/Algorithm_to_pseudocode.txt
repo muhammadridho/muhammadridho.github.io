@@ -1,0 +1,20 @@
+Tugas Kasus menjadi PSEUDOCODE
+
+Tugas Pertama
+--------------
+SIMPAN 'angka pertama' 
+SIMPAN 'angka kedua'
+HITUNG 'angka pertama' dikalikan 'angka kedua'
+TULISKAN hasil perhitungan dari HITUNG
+
+Tugas 2
+--------------
+SIMPAN  'kata'
+IF 'kata' sama dengan "Saya Belajar JavaScript!" TULISKAN "Pasti Bisa!"
+
+Tugas 3
+-------------
+SIMPAN 'nomor terakhir'
+ULANGI dari nomor_awal  sampai  'nomor terakhir'
+TAMPILKAN jika nomor_awal berkelipatan 3
+

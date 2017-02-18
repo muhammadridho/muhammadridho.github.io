@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mencoba</title>
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Mada|Roboto:300|Rubik" rel="stylesheet">
+        <style>
+            body{
+                background-color: #FFF;
+                margin: 0;
+            }
+            .coba{
+                 background: #fff;
+                width:500px;
+                height: 350px;
+                margin: 20px auto;
+                  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            }
+            
+            .hapus{
+                outline: none;
+                border:0;
+                width:70px;
+                height: 70px;
+                border-radius: 100%;
+                background-color: deepskyblue;
+            }
+            .container{
+                margin-left: 25%;
+                background-color: #FEF0D6;
+                height: 100%;
+                padding-top: 10%;
+            }
+            .samping-nav{
+                background-color:rgba(0,0,0,0.6);
+                position: fixed;
+                width:25%;
+                height: 100%;
+                top:0;
+                -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+                -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+                box-shadow: 1px 2px 2px rgba(0, 0, 0, .3);
+                text-align: center;
+                margin: 0;
+            }
+            #nav-samping{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                margin: 0;
+                padding: 80% 0;
+                
+
+            }
+            .side-list{
+                list-style: none;
+                font-family: 'Roboto', sans-serif;
+                color:#fff;
+                font-size: 20px;
+                cursor: pointer;
+                padding: 20px 0;
+                letter-spacing: 0px;
+                text-transform: uppercase;
+                position: relative;
+               
+                
+            }
+            
+            .side-list.active{
+                border-right: 8px solid #FFD73C;
+                background-color: #FAF6E3;
+                color: #FDD000;
+            }
+            
+            .side-list:hover{
+                background-color: #EDF2F3;
+                color: #F67A47;
+                
+            }
+            
+            .notif-baru{
+                position: absolute;
+                left: 70%;
+                border-radius: 100%;
+                font-size: 13px;
+                width:25px;
+                height: 25px;
+                padding:4px;
+                background-color:#F67A47;
+                box-sizing: border-box;
+                  -webkit-animation: bounceIn 1s infinite; /* Safari 4+ */
+                  -moz-animation:    bounceIn 1s infinite; /* Fx 5+ */
+                  -o-animation:      bounceIn 1s infinite; /* Opera 12+ */
+                  animation:         bounceIn 2s infinite; /* IE 10+, Fx 29+ */
+            }
+            .icon-nav{
+                background-size: cover;
+                background-position: center;
+                position: absolute;
+                left: 15%;
+                width:35px;
+                height: 35px;
+               
+            }
+            
+            .note{
+                background-image: url(asset/notebook.svg);
+              
+            }
+            
+            .teman{
+                background-image: url(asset/users-hover.svg);
+           
+            }
+            
+            .profile{
+                background-image: url(asset/user-hover.svg);
+           
+            }
+            
+            
+            
+  
+            
+            
+            header{
+               background-color:#3068B6;
+               font-family: 'Mada', sans-serif;
+               position: fixed;
+               width:100%;
+               height: 13%;
+               z-index: 2;
+               top:0;
+  
+               -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+               -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+               box-shadow: 1px 2px 2px rgba(0, 0, 0, .3);
+               text-align: center;
+            }
+            h1{
+              margin-top: 10px;
+               color: #fff;
+               font-size: 45px;
+              color: rgba(0,0,0,0.6);
+              text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+              0px -5px 35px rgba(255,255,255,0.3);
+            }
+            .loading{
+                z-index: 1000;
+                width:100%;
+                background-color:#3068B6;
+                position: fixed;
+                top: 0;
+                height: 4px;
+                opacity: 1;
+            }
+            .loading:before{
+                content: '';
+                position: absolute;
+                display: block;
+                background-color: #FFD73C;
+                left: 50%;
+                width:10%;
+                height: 100%;
+                -moz-animation: animasi-loading-kiri 1.5s infinite;
+                -o-animation : animasi-loading-kiri 1.5s infinite;
+                -webkit-animation: animasi-loading-kiri 1.5s infinite;
+                animation: animasi-loading-kiri 1.5s infinite;
+
+            }
+            .loading:after{
+                 content: '';
+                position: absolute;
+                display: block;
+                left:50%;
+        
+                background-color: #FFD73C;
+                width:40%;
+                height: 100%;
+                -moz-animation: animasi-loading-kanan 1.5s infinite;
+                -o-animation : animasi-loading-kanan 1.5s infinite;
+                -webkit-animation: animasi-loading-kanan 1.5s infinite;
+                animation: animasi-loading-kanan 1.5s infinite;
+            }
+            
+
+            @keyframes animasi-loading-kiri{
+                0%{
+                   left: 50%;
+                   width: 10%;
+                }  
+                20%{
+                    left: 40%;
+                    width: 20%;
+                }
+                40%{
+                    left: 30%;
+                    width: 30%;
+                }
+                80%{
+                    left:20%;
+                    width:40%;
+                }
+                100%{
+                    left: 0%;
+                    width: 50%;
+                }
+            }
+            
+            @keyframes animasi-loading-kanan{
+                0%{
+                    width: 10%;
+                }
+                20%{
+                    width: 20%;
+                }
+                40%{
+                    width: 30%;
+                }
+                80%{
+                    width: 40%;
+                }
+                100%{
+                    width: 50%;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+     
+       <header><h1>Hai Bro!</h1></header>
+       <div class="samping-nav">
+           <ul id="nav-samping">
+               <li class="side-list active"><span class="icon-nav note"></span>Notes</li>
+               <li class="side-list"><span class="icon-nav profile"></span>Profile</li>
+               <li class="side-list"><span class="icon-nav teman"></span>Friends
+               <span class="notif-baru">1</span></li>
+
+           </ul>
+       </div>
+       
+  
+        <div class="container">
+        <div class="coba" id="notes2">
+        
+        </div>
+        <div class="coba" id="notes3">
+            
+        </div>
+        </div>
+        
+        <script>
+            var notes3 = document.querySelector("#notes3");
+            notes3.setAttribute("onclick",'hapus("#notes3")');
+            
+            function statusBaru(){
+                var coba = document.querySelector("#notes2");
+                coba.classList.add("animated");
+                coba.classList.add("bounceIn");
+            }
+            function hapus(element){
+                var elementnya = document.querySelector(element);
+                elementnya.classList.add("animated");
+                elementnya.classList.add("bounceOut");
+                setTimeout(function(){
+                    var body = document.body;
+                    body.removeChild(elementnya);
+                },1000);
+                
+            }
+            var body = document.body;
+            
+           var selector, elems, makeActive;
+  
+            
+            selector = '#nav-samping li';
+            
+            elems = document.querySelectorAll(selector);
+
+            makeActive = function () {
+            var active = document.querySelector('.active');
+            active.classList.remove('active');
+    
+                    this.classList.add('active');
+            };
+
+for (var i = 0; i < elems.length; i++)
+    elems[i].addEventListener('mousedown', makeActive);
+            
+            var ul = document.querySelector('#nav-samping');
+         
+            var listnya = ul.children;
+            
+            var loading = document.createElement('div');
+            loading.classList.add('loading')
+
+            
+            ul.addEventListener('click',function(){
+                setTimeout(function(){
+                    body.appendChild(loading);
+                },200);
+                
+                setTimeout(function(){
+                    body.removeChild(loading);
+                },1600);
+            })
+        
+            var list = document.querySelector('.side-list');
+          
+        </script>
+    </body>
+    
+</html>

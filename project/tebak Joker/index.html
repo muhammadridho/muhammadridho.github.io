@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        background-color: #2B3134;
+        font-family: 'Arial', sans-serif;
+        color:#fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+            
+    }
+    h1{
+        font-size: 45px;
+        font-weight: 100;
+        margin-bottom: -5px;
+        margin-top: 30px;
+    }
+    h2{
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    
+    h4{
+        font-size: 18px;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        width: 60%;
+    }
+.card{ 
+    width:280px; 
+    height:320px; 
+    margin:10px; 
+    float:left; 
+    }
+.card > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:#FF7416; 
+    width:240px; 
+    height:320px; 
+    border-radius: 3px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+}
+.card > .back{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #FFF; 
+    width:240px; 
+    height:320px; 
+    border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-top: 20px solid #FF7416; 
+    border-bottom: 20px solid #FF7416; 
+    
+}
+.card:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.card:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+    .joker{
+        width:200px;
+        height: 200px;
+        background-image: url(jester.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 25%;
+    }
+
+</style>
+</head>
+<body>
+<h1>Tebak Kartu Joker</h1>
+<h2>Disini kamu diminta mengarakan cursor kamu ke arah kartu yang tersedia. Jika kamu berhasil mendapatkan kartu joker,score akan bertambah</h2>
+<div class="container">
+    <div class="card">
+  <div class="back"></div>
+  <div class="front"></div>
+</div>
+<div class="card">
+  <div class="back"></div>
+  <div class="front"></div>
+</div>
+<div class="card">
+  <div class="back"></div>
+  <div class="front"></div>
+</div>
+</div>
+<h4>Skor Anda : <span>0</span></h4>
+<script>
+    const kartu = document.body.children[2].getElementsByClassName('card');
+    const ElementNomor = document.body.children[3].children[0];
+    var angka =  Math.floor(Math.random() * ((kartu.length - 1) - 0 + 1)) + 0;
+    var angkaSebelumnya = 0;
+    var nilai = 0;
+    const joker = document.createElement('div');
+    joker.classList.add('joker');
+    console.log(kartu);    
+    for (let i = 0; i < kartu.length ;i++){
+        kartu[i].addEventListener('mouseenter',function(){
+            if (i == angka){
+                kartu[i].children[0].appendChild(joker);
+                console.log("berhasil");
+                angka =  Math.floor(Math.random() * ((kartu.length - 1) - 0 + 1)) + 0;
+                ElementNomor.textContent = Number(ElementNomor.textContent) + 1;
+            }
+            else{
+                angka =  Math.floor(Math.random() * ((kartu.length - 1) - 0 + 1)) + 0;
+                if (kartu[i].children[0].contains(joker)) kartu[i].children[0].removeChild(joker);
+                
+                
+            }
+        });
+    
+    }
+    
+
+    
+    
+    
+    
+
+</script>
+</body>
+</html>

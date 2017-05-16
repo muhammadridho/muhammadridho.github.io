@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd-development/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd-development/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd-development/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd-development/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

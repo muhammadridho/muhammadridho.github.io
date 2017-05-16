@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd-development/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd-development/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd/android/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd/android/app/build/intermediates/exploded-aar/client/react-native-image-picker/unspecified/res/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd-development/android/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/Users/mridho/Documents/My E-Data/School/Bootcamp/Daily Course Hacktiv8 /Phase 3/final-project/FrontEnd-development/android/app/build/intermediates/exploded-aar/client/react-native-image-picker/unspecified/res/xml/provider_paths.xml"
+    }
+]

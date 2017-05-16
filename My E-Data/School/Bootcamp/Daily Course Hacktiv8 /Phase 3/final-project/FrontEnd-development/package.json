@@ -1,0 +1,52 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "antd-mobile": "^1.1.2",
+    "axios": "^0.16.1",
+    "eslint": "^3.19.0",
+    "native-base": "^2.1.3",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.44.0",
+    "react-native-android-location-services-dialog-box": "^1.2.1",
+    "react-native-android-permissions": "0.0.7",
+    "react-native-animated-modal": "^1.1.0",
+    "react-native-drawer": "^2.3.0",
+    "react-native-easy-grid": "^0.1.8",
+    "react-native-fbsdk": "^0.5.0",
+    "react-native-image-picker": "^0.26.3",
+    "react-native-maps": "0.13.0",
+    "react-native-popup": "^0.6.1",
+    "react-native-popup-dialog": "^0.7.28",
+    "react-native-spinkit": "^1.0.2",
+    "react-native-step-indicator": "^0.0.5",
+    "react-native-swipeable": "^0.4.0",
+    "react-native-vector-icons": "^4.1.1",
+    "react-native-viewpager": "^0.2.13",
+    "react-navigation": "^1.0.0-beta.9",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.0",
+    "babel-plugin-import": "^1.1.1",
+    "babel-preset-react-native": "1.9.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.0",
+    "jest": "20.0.0",
+    "react-test-renderer": "16.0.0-alpha.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

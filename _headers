@@ -1,0 +1,38 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/offline-plugin-app-shell-fallback/
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-2d637d46ffe1993bce5c.js>; rel=preload; as=script
+/cube-round-make-cubes-round
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </0-fcd4ac3c5e5d2f852875.js>; rel=preload; as=script
+/blob-sphere-make-spheres-blob
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </0-fcd4ac3c5e5d2f852875.js>; rel=preload; as=script
+/leko-arts-your-theme-creator
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </0-fcd4ac3c5e5d2f852875.js>; rel=preload; as=script
+/smart-triangle-make-triangles-smart
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </0-fcd4ac3c5e5d2f852875.js>; rel=preload; as=script
+/404/
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </0-fcd4ac3c5e5d2f852875.js>; rel=preload; as=script
+/about/
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </0-fcd4ac3c5e5d2f852875.js>; rel=preload; as=script
+/contact/
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </0-fcd4ac3c5e5d2f852875.js>; rel=preload; as=script
+/
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </0-fcd4ac3c5e5d2f852875.js>; rel=preload; as=script
+/404.html
+  Link: </webpack-runtime-959e243835cb2537b807.js>; rel=preload; as=script
+  Link: </0-fcd4ac3c5e5d2f852875.js>; rel=preload; as=script
